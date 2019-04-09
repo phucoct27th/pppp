@@ -1,0 +1,59 @@
+﻿@model kiemtra.Models.sanpham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = null;
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sanpham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dmsanpham.tenDM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dmsanpham.tenDM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tenSP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.xuatSU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.xuatSU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.namSX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.namSX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dgia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dgia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.maSP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
